@@ -79,6 +79,7 @@ openssl verify -verbose -CAFile ca.crt domain.crt
 ```sh
 openssl genrsa -out domain.key 2048
 openssl genrsa -des3 -out domain.key 2048
+openssl rsa -in domain.key -pubout -out domain.pub
 ```
 ### Verify a Private Key
 ```sh
