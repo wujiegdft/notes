@@ -144,6 +144,26 @@ openssl pkcs12 \
        -nodes -out domain.combined.crt
 ```
 
+```sh
+mkdir CA
+cd CA/
+mkdir -p ./demoCA/newcerts
+touch demoCA/index.txt
+touch demoCA/serial
+echo 01 > demoCA/serial
+
+openssl req \
+  -new -newkey rsa:2048 -days 365 -nodes -x509 \
+  -keyout ca.key -out ca.crt \
+  -subj '/CN=ca.wujie.com/O=WUJIE LTD./C=US'
+  
+openssl req \
+       -newkey rsa:2048 -nodes -keyout domain.key \
+       -out domain.csr \
+       -subj '/CN=domain.com/O=My Company Name LTD./C=US'
+	
+openssl ca -in domain.csr -out domain.crt -cert ca.crt -keyfile ca.key
+```
 
 # TERM
 
