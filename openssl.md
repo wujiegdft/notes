@@ -1,6 +1,6 @@
 # SYNOPSIS
 
-## Generating CSRs
+## Generating CSR
 
 ### Generate a Private Key and a CSR
 ```sh
