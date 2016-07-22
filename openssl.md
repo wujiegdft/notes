@@ -71,7 +71,7 @@ openssl x509 -text -noout -in domain.crt
 
 ### Verify a Certificate was Signed by a CA
 ```sh
-openssl verify -verbose -CAFile ca.crt domain.crt
+openssl verify -verbose -CAfile ca.crt domain.crt
 ```
 
 ## Private Keys
