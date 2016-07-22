@@ -155,12 +155,12 @@ echo 01 > demoCA/serial
 openssl req \
   -new -newkey rsa:2048 -days 365 -nodes -x509 \
   -keyout ca.key -out ca.crt \
-  -subj '/CN=ca.wujie.com/O=WUJIE LTD./C=US'
+  -subj "/C=GB/ST=London/L=London/O=Global Security/OU=IT Department/CN=example.com"
   
 openssl req \
        -newkey rsa:2048 -nodes -keyout domain.key \
        -out domain.csr \
-       -subj '/CN=domain.com/O=My Company Name LTD./C=US'
+       -subj "/C=GB/ST=London/L=London/O=Global Security/OU=IT Department/CN=example.com"
 	
 openssl ca -in domain.csr -out domain.crt -cert ca.crt -keyfile ca.key
 ```
