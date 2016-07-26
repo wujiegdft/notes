@@ -4,4 +4,5 @@ chmod 0600 swapfile
 mkswap swapfile
 swapon swapfile
 free -m
+echo ./swapfile swap swap defaults 0 0 >> /etc/fstab
 ```
