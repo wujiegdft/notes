@@ -1,0 +1,75 @@
+Presentation Asistant
+
+Ctrl+N class look up
+    camel case
+
+Ctrl+shtift+N file look up
+    file path with /
+    : line num
+
+symbol lookup
+    OST.sumfl(OST as class name)
+
+search everything(double shift)
+    tab to diff section
+
+turn of tab
+
+create new file
+    mkdir -p
+
+window 
+    alt + 1
+    resize
+
+code editor
+    select word line expand selection
+
+    copy paste delete line 
+        ctrl shift v
+        ctrl y
+        ctrl d
+    
+    ideavim
+
+    inject language
+        json
+        regex
+    
+    check methiod doc 
+        ctrl q
+        ctrl p
+
+    code compeletion
+        alt /
+
+    live template
+        ctrl j
+
+    surround template
+        ctrl alt t
+
+    complte current statement
+        ctrl shift enter
+
+    join line
+
+    post suffix compeletion
+
+navigate for java
+    sub class
+    super class
+
+navigation bar
+    alt home
+
+inspection
+    f2
+    shift f2
+
+git
+
+terminal
+
+
+
