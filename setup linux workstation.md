@@ -18,3 +18,8 @@ MINPWM=hwmon4/pwm2=0 hwmon4/pwm1=0
 MAXPWM=hwmon4/pwm2=150 hwmon4/pwm1=100
 
 ```
+
+```
+gsettings get org.gnome.desktop.peripherals.mouse speed 1.1
+
+```
